@@ -68,10 +68,11 @@ add.addEventListener("click", () => {
 
   const check = validate(newStaff);
   console.log(check);
-  if (check) {
+  if (check.isError == true) {
     renderError(check);
+  } else {
+    listStudentLocal.push(newStaff);
   }
-  listStudentLocal.push(newStaff);
   localStorage.setItem("listStudents", JSON.stringify(listStudents));
   render(listStudentLocal);
 });
