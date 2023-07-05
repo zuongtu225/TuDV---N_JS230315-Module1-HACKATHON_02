@@ -55,7 +55,7 @@ add.addEventListener("click", () => {
   const email = document.querySelector("#email").value;
   const phone = document.querySelector("#phone").value;
   const address = document.querySelector("#address").value;
-  getGender();
+  getGender(); //gọi hàm này để lấy giới tính khi họ click
   const gender = selectedGender;
   const newStaff = {
     id: listStudentLocal.length + 1,
@@ -134,7 +134,7 @@ $(showForm).click(function () {
   $(form).toggle(1000);
 });
 //radio___lấy giới tính
-var selectedGender;
+var selectedGender; //giới tính được trả về trong hàm getRender()
 function getGender() {
   var genderRadios = document.getElementsByName("gender");
   // Lặp qua tất cả các nút radio
