@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="hakathon.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>RIKKEI ACADEMY</h1>
+        <h2>HAKATHON 2</h2>
+      </div>
+
+      <!-- Bài 1  -->
+      <fieldset>
+        <legend>Bài 1</legend>
+        <h3>Bài 1 : Cho người dùng nhập vào 1 chuỗi str.</h3>
+        <input type="text" id="checkvalue" class="checkvalue" />
+        <button id="bai1" class="btn">Result</button>
+        <p id="result"></p>
+      </fieldset>
+
+      <!-- Bài 2  -->
+      <fieldset>
+        <legend>Bài 2</legend>
+        <h3>
+          Viết 1 chương trình với đầu vào là 1 chuỗi ký tự và in ra chuỗi đó
+        </h3>
+        <pre>
+       
+          - Nếu gặp chữ cái đầu viết hoa chuyển thành chữ thường.
+          - Nếu gặp chữ cái đầu viết thường chuyển thành viết hoa 
+          </pre
+        >
+        <input type="text" id="checkvalue2" class="checkvalue" />
+        <button id="bai2" class="btn">Result</button>
+        <p id="result2"></p>
+      </fieldset>
+
+      <!-- Bài 3  -->
+      <fieldset>
+        <legend>Bài 1</legend>
+        <h3>Bài 1 : Cho người dùng nhập vào 1 chuỗi str.</h3>
+
+        <input type="text" id="checkvalue3" class="checkvalue" />
+        <button id="bai1" class="btn">Result</button>
+        <p id="result"></p>
+      </fieldset>
+
+      <!-- Bài 4  -->
+      <fieldset>
+        <legend>Bài 1</legend>
+        <h3>Bài 1 : Cho người dùng nhập vào 1 chuỗi str.</h3>
+        <input type="text" id="checkvalue4" class="checkvalue" />
+        <button id="bai1" class="btn">Result</button>
+        <p id="result"></p>
+      </fieldset>
+      <!-- Bài 5  -->
+      <fieldset>
+        <legend>Bài 5</legend>
+
+        <table>
+          <div class="title-table">
+            <p>Quản Lý Nhân Viên Rikkei Academy</p>
+            <button id="showForm" class="btn-show">Thêm nhân viên mới</button>
+            <!-- form thêm mới nhân viên -->
+            <div class="form-add">
+              <input type="text" placeholder=" Tên " id="name" />
+              <input type="text" placeholder=" Tuổi " id="age" />
+              <input type="text" placeholder="Địa chỉ" id="address" />
+              <input type="text" placeholder="Chức vụ" id="position" />
+              <button id="btn-add">Thêm Ngay</button>
+            </div>
+            <!-- form cập nhật nhân viên -->
+            <div class="form-update">
+              <input type="text" placeholder=" Tên " id="name-update" />
+              <input type="text" placeholder=" Tuổi " id="age-update" />
+              <input type="text" placeholder="Địa chỉ" id="address-update" />
+              <input type="text" placeholder="Chức vụ" id="position-update" />
+              <button id="btn-update">Cập Nhật</button>
+            </div>
+          </div>
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th>Họ và tên</th>
+              <th>Tuổi</th>
+              <th>Địa chỉ</th>
+              <th>Chức vụ</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </fieldset>
+    </div>
+    <script src="hakathon.js"></script>
+  </body>
+</html>

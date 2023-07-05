@@ -1,0 +1,147 @@
+body {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+fieldset {
+  overflow: hidden;
+  border-radius: 7px;
+  padding: 30px 40px;
+  margin: 30px auto;
+  font-weight: bold;
+  color: black;
+  border: 2px solid #040404;
+  background-color: #fff;
+  width: 70%;
+}
+
+legend {
+  background-color: #050505;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: white;
+  border: 1px solid rgb(4, 247, 0);
+}
+.title {
+  padding: 10px 20px;
+  font-weight: bold;
+  text-align: center;
+  color: red;
+  width: 100%;
+  background-color: #fff;
+}
+.checkvalue {
+  width: 80%;
+  border-radius: 5px;
+  height: 35px;
+  border: 1px solid rgba(111, 110, 110, 0.517);
+}
+.btn {
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  padding: 7px 20px;
+  background-color: black;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+#result {
+  color: rgb(255, 0, 0);
+}
+pre {
+  font-size: 20px;
+}
+table {
+  border: 5px solid black;
+  width: 100%;
+  padding: 10px;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 15px 25px;
+  border: 2px solid rgb(0, 166, 175);
+  text-align: center;
+}
+.title-table {
+  color: #ff0000;
+  background-color: #050505;
+  font-size: 20px;
+  padding: 5px 20px;
+  font-weight: bold;
+}
+.btn-show {
+  border-radius: 5px;
+  background-color: rgb(3, 182, 3);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.icon i {
+  cursor: pointer;
+  margin: 10px;
+}
+.icon i:first-child {
+  font-size: 35px;
+  color: rgb(0, 173, 179);
+}
+.icon i:last-child {
+  font-size: 40px;
+  color: rgb(255, 0, 0);
+}
+.form-add,
+.form-update {
+  display: none;
+  background-color: #fff;
+  text-align: center;
+  width: max-content;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 20px 20px;
+}
+.form-add input {
+  padding: 10px;
+  height: 25px;
+  width: 400px;
+  display: block;
+  margin: 20px 20px;
+  border-radius: 2px;
+  border: 1px solid rgb(124, 124, 124);
+}
+.form-update input {
+  padding: 10px;
+  height: 25px;
+  width: 400px;
+  display: block;
+  margin: 20px 20px;
+  border-radius: 2px;
+  border: 1px solid rgb(124, 124, 124);
+}
+.form-add button {
+  border-radius: 5px;
+  background-color: rgb(3, 182, 3);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  margin: 10px;
+}
+.form-update button {
+  border-radius: 5px;
+  background-color: rgb(3, 182, 3);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  margin: 10px;
+}
