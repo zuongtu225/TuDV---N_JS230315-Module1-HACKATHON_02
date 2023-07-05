@@ -22,20 +22,6 @@ bai1.addEventListener("click", () => {
     print.innerHTML = "Vui lòng nhập hơn 2 ký tự";
   }
 });
-// Bài 2
-// const bai2 = document.getElementById("bai2");
-// bai2.addEventListener("click", () => {
-//   const string = document.getElementById("checkvalue2").value;
-//   const print2 = document.getElementById("result2");
-//   let result = " ";
-//   for (let i = 0; i < string.length; i++) {
-//     if (string[i][0] == string[i][0].toUpperCase()) {
-//       result += string[i][0].toLowerCase();
-//     }
-//   }
-//   print2.style.color = "green";
-//   print2.innerHTML = result;
-// });
 const bai2 = document.getElementById("bai2");
 bai2.addEventListener("click", () => {
   let print2 = document.querySelector("#result2");
@@ -58,7 +44,7 @@ bai2.addEventListener("click", () => {
     print2.innerHTML = result;
   }
 });
-//____app quản lý nhân viên_____
+//____Bài 5___app quản lý nhân viên_____
 const listStaff = [
   {
     id: 1,
