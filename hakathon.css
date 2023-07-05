@@ -1,0 +1,112 @@
+* {
+  padding: 0 20px;
+  margin: 0;
+  box-sizing: border-box;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 15px 25px;
+  border: 2px solid rgb(0, 166, 175);
+  text-align: center;
+}
+
+.container-form {
+  color: white;
+  padding: 30px;
+  margin: 20px 0;
+  background-color: black;
+}
+.btn-show {
+  border-radius: 5px;
+  background-color: rgb(3, 182, 3);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+.title-rikkei {
+  text-align: center;
+}
+.icon i {
+  cursor: pointer;
+}
+.icon i:first-child {
+  color: rgb(0, 173, 179);
+}
+.icon i:last-child {
+  color: rgb(255, 0, 0);
+}
+/* ----form add---- */
+.form {
+  border-radius: 5px;
+  margin: 20px;
+  display: none;
+  color: black;
+  width: max-content;
+  padding: 10px 5px;
+  background-color: #fff;
+}
+.form input {
+  margin-top: 20px;
+}
+.name-input {
+  margin-left: 44px;
+}
+.even-input {
+  margin-left: 53px;
+}
+.even-input:last-child {
+  margin-left: 50px;
+}
+.phone-input {
+  margin-left: 27px;
+}
+.odd-input {
+  margin-left: 72px;
+}
+.gender-input {
+  margin-left: 50px;
+}
+#btn-add,
+#btn-update {
+  margin: 20px auto;
+  display: block;
+  border-radius: 5px;
+  background-color: rgb(3, 182, 3);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.form-update {
+  color: white;
+  background-color: rgb(8, 8, 8);
+}
+.search {
+  position: relative;
+}
+#search {
+  border-radius: 5px;
+  margin-left: 50%;
+  width: 50%;
+  height: 35px;
+}
+.bx-search {
+  color: black;
+  position: absolute;
+  right: 15px;
+  margin-top: 5px;
+  font-size: 25px;
+}
+.error {
+  color: red;
+  margin-left: 33%;
+  margin-top: 10px;
+}

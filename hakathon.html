@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="hakathon.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <div class="wraper-hakathon2">
+
+      <!-- form thêm mới nhân viên -->
+      <div class="container-form">
+        <div class="title-rikkei">
+      <h1>Rikkei Academy</h1>
+      <h1>Quản Lý Học Viên</h1>
+    </div>
+        <!-- show form -->
+        <button id="showForm" class="btn-show">Thêm học viên mới</button>
+        <div class="search">
+          <i class='bx bx-search' ></i>
+          <input id="search" oninput="search()" type="text" placeholder="Tìm kiếm học viên">
+        </div>
+        <!-- _______________________ -->
+          <div class="form form-add">
+            <label
+              >Họ và Tên:
+              <input
+                class="name-input"
+                type="text"
+                id="name"
+                placeholder="vui lòng nhập tên"
+              />
+            </label>
+            <p id="nameMSG" class="error"></p>
+            <br />
+
+            <label
+              >Email:
+              <input
+                class="odd-input"
+                type="email"
+                id="email"
+                placeholder="vui lòng nhập email"
+              />
+            </label>
+            <p id="emailMSG" class="error"></p>
+            <br />
+            <label
+              >Số điện thoại:
+              <input
+                class="phone-input"
+                type="number"
+                id="phone"
+                placeholder="vui lòng nhập số điện thoại"
+              />
+            </label>
+            <p id="phoneMSG" class="error"></p>
+
+            <br />
+            <label
+              >Quê quán:
+              <input
+                class="even-input"
+                type="text"
+                id="address"
+                placeholder="vui lòng nhập quê quán"
+              />
+            </label>
+            <p id="addresslMSG" class="error"></p>
+
+            <br />
+            <!-- <div class="gender-radio"> -->
+            <label
+              >Giới tính:</label>
+              <input
+                class="gender-input"
+                name="gender"
+                type="radio"
+                id="nam"
+                value="Nam"
+                checked
+              />Nam
+              <input
+                class="gender-input"
+                name="gender"
+                type="radio"
+                value="Nữ"
+                id="nu"
+              />Nữ</label
+            >
+            <!-- </div> -->
+            <button id="btn-add">Thêm Ngay</button>
+          </div>
+      </div>
+      <table>
+        <!-- form cập nhật nhân viên -->
+        <div class="form form-update">
+          <label
+            >Họ và Tên:
+            <input
+              class="name-input"
+              type="text"
+              id="name-update"
+              placeholder="vui lòng nhập tên"
+            />
+          </label>
+          <br />
+
+          <label
+            >Email:
+            <input
+              class="odd-input"
+              type="email"
+              id="email-update"
+              placeholder="vui lòng nhập email"
+            />
+          </label>
+          <br />
+          <label
+            >Số điện thoại:
+            <input
+              class="phone-input"
+              type="number"
+              id="phone-update"
+              placeholder="vui lòng nhập số điện thoại"
+            />
+          </label>
+          <br />
+          <label
+            >Quê quán:
+            <input
+              class="even-input"
+              type="text"
+              id="address-update"
+              placeholder="vui lòng nhập quê quán"
+            />
+          </label>
+          <br />
+          <!-- <div class="gender-radio"> -->
+          <label
+            >Giới tính:</label>
+            <input
+              class="gender-input"
+              name="gender"
+              type="radio"
+              value="Nam"
+              checked
+            />Nam
+            <input
+              class="gender-input"
+              name="gender"
+              type="radio"
+              value="Nữ"
+            />Nữ</label
+          >
+          <!-- </div> -->
+          <button id="btn-update">Cập nhật</button>
+        </div>
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Họ và tên</th>
+            <th>Email</th>
+            <th>Điện thoại</th>
+            <th>Địa chỉ</th>
+            <th>Giới tính</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="hakathon.js"></script>
+  </body>
+</html>
