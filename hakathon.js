@@ -22,27 +22,30 @@ bai1.addEventListener("click", () => {
     print.innerHTML = "Vui lòng nhập hơn 2 ký tự";
   }
 });
+//Bài2
 const bai2 = document.getElementById("bai2");
 bai2.addEventListener("click", () => {
-  let print2 = document.querySelector("#result2");
-  let string = document.getElementById("checkvalue2").value;
-  const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const inputValue = document.querySelector("#format-character").value;
   let result = "";
-  let isDulicate = false;
-  for (let k = 0; k < string.length; k++) {
-    for (let i = 0; i < upper.length; i++) {
-      if (string[k] === upper[i]) {
-        result += string[k].toLowerCase();
-        isDulicate = true;
-        break; //DỪNG LẶP CÁC CHỮ CÒN LẠI
-      }
-      if (!isDulicate) {
-        result += string[k].toUpperCase();
-        break;
-      }
+
+  result = inputValue;
+
+  const words = result.split(" "); // tach chuoi ra cac phan tu
+
+  for (let i = 0; i < words.length; i++) {
+    const word = words[i];
+
+    if (word[0] === word[0].toUpperCase()) {
+      words[i] = word[0].toLowerCase() + word.slice(1);
+    } else {
+      words[i] = word[0].toUpperCase() + word.slice(1);
     }
-    print2.innerHTML = result;
   }
+
+  result = words.join(" "); // ghep cai tu lai thanh 1 chuoi moi
+
+  const resultElement = document.querySelector("#result_2");
+  resultElement.innerHTML = result;
 });
 //____Bài 5___app quản lý nhân viên_____
 const listStaff = [
